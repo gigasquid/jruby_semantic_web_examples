@@ -13,7 +13,10 @@ require 'java'
 
 java_import 'com.hp.hpl.jena.rdf.model.ModelFactory'
 java_import 'com.hp.hpl.jena.util.FileManager'
+java_import 'com.hp.hpl.jena.vocabulary.VCARD'
 java_import 'java.io.InputStream'
+
+john_smith_uri = "http://somewhere/JohnSmith/"
 
 #Creating a model 
 m = ModelFactory.create_default_model
@@ -24,8 +27,23 @@ input_file = FileManager.get.open "sample_input.rdf"
 #read the RDF/XML file
 m.read(input_file, nil)
 
-#write the RDF file out in a different format
-m.write(java.lang.System::out, "N-TRIPLE")
+#Retreive the john_smith vcard from the model and properties
+vcard = m.get_resource(john_smith_uri)
+name = vcard.get_required_property(VCARD::N).get_object
+full_name = vcard.get_required_property(VCARD::FN).get_string;
+
+#Add nicknames to the vcard
+vcard.add_property(VCARD::NICKNAME, "Smithy")
+vcard.add_property(VCARD::NICKNAME, "Adman")
+
+puts "The Nicknames of #{full_name} are"
+iter = vcard.list_properties VCARD::NICKNAME
+while iter.has_next
+  puts iter.next_statement.get_object.to_s
+end
+
+
+
 
 
 
