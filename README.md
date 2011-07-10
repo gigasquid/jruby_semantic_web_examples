@@ -5,7 +5,7 @@ given in the
 in [Jean API Docs](http://openjena.org/tutorial/RDF_API/index.html).
 
 * example_1.rb: Tutorial 1 - Creating a Simple Model
-* example_2.rb: Tutorial 2  -Resources as property values
+* example_2.rb: Tutorial 2  - Resources as property values
 * example_3.rb: Tutorial 3 - Statement attribute accessor methods
 * example_4.rb: Tutorial 4 - Create a model and write it in XML form to standard out
 * example_5.rb: Tutorial 5 - Read RDF XML from a file and write it to standard out
@@ -16,7 +16,7 @@ in [Jean API Docs](http://openjena.org/tutorial/RDF_API/index.html).
 * example_10.rb: Tutorial 10 - Demonstrate a container
 * example_11.rb: Tutorial 11 - More on literals
 
-## Also examples of querying DBPedia with 
+## Also examples of querying DBPedia
 * query_dbpedia_example.rb : German Musicians with a birth place of
 Berlin
 * query_dbpedia_geo_example.rb:  Places nearby the White House
