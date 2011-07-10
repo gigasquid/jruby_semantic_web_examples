@@ -12,6 +12,7 @@ java_import 'com.hp.hpl.jena.query.QueryFactory'
 java_import 'com.hp.hpl.jena.query.QueryExecutionFactory'
 
 #Querying Dbpedia with GEO information
+#Places nearby to the White House
 query = %q(
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

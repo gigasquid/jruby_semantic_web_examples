@@ -12,6 +12,7 @@ java_import 'com.hp.hpl.jena.query.QueryFactory'
 java_import 'com.hp.hpl.jena.query.QueryExecutionFactory'
 
 #Querying Dbpedia
+#German Musicians with birthplace of Berlin
 
 
 query = %q(

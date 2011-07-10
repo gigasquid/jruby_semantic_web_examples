@@ -16,6 +16,12 @@ in [Jean API Docs](http://openjena.org/tutorial/RDF_API/index.html).
 * example_10.rb: Tutorial 10 - Demonstrate a container
 * example_11.rb: Tutorial 11 - More on literals
 
+Also examples of querying DBPedia with 
+* query_dbpedia_example.rb : German Musicians with a birth place of
+Berlin
+* query_dbpedia_geo_example.rb:  Places nearby the White House
+* query_dbpedia_example2.rb: Musical Artist Sopranos with the hometown as the US
+
 ## Running
 
 Run the examples with jruby 
