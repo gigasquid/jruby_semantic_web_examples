@@ -1,8 +1,8 @@
-# JRuby Semantic Web Examples
+# JRuby - Jena Semantic Web Examples
 
 These are some examples in JRuby following along the examples 
 given in the 
-in [Jean API Docs](http://openjena.org/tutorial/RDF_API/index.html).
+in [Jena API Docs](http://openjena.org/tutorial/RDF_API/index.html).
 
 * example_1.rb: Tutorial 1 - Creating a Simple Model
 * example_2.rb: Tutorial 2  - Resources as property values
